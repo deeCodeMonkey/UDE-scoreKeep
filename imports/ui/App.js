@@ -8,16 +8,18 @@ import PlayerList from './PlayerList';
 export default class App extends Component {
 
     render() {
-        
+
         let title = 'Score Keep';
-        let subTitle = 'Created By Deidra';
+        let subTitle = 'Created By Deidra Nguyen';
 
         return (
             <div>
-                <TitleBar title={title} subTitle={subTitle} />
-                <PlayerList players={this.props.players}/>
-                <AddPlayer />
-              
+                <TitleBar title={title} subTitle={subTitle}/>
+                <div className="wrapper">
+                    <PlayerList players={this.props.players} />
+                    <AddPlayer/>
+                </div>
+
             </div>
         );
     }

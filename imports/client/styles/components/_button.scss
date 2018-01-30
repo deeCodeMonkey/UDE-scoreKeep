@@ -1,0 +1,33 @@
+﻿.button {
+    background: transparent;
+    border: 1px solid #555555;
+    color: #555555;
+    cursor: pointer;
+    font-weight: 600;
+    //to center text in button
+    line-height: 1;
+    margin-left: 1.3rem;
+    outline: none;
+    padding: 1.3rem;
+    //transition background color as user interacts with button, transition in .2 seconds and eases
+    transition: background .2s ease, transform .2s ease;
+    //scss for pseudo selectors
+    //extra style when user hovers over the button
+    &:hover, &:focus {
+        background: #e8e8e8;
+    }
+    //when pressing on button
+    &:active {
+        background: #cccccc;
+        //gets bigger when clicked
+        transform: scale(1.1);
+    }
+}
+
+//modifier
+.button--round{
+    //circle
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+}

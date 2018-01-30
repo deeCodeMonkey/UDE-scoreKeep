@@ -1,0 +1,12 @@
+﻿.form {
+    //flexbox
+    display: flex;
+}
+
+//input and button tags becomes 'flex items' of the form container with flex
+.form__input {
+    border: 1px solid #e8e8e8e;
+    //1 means input field can fill up the empty space
+    flex-grow: 1;
+    padding: 0 1.3rem 0 1.3rem; //or just one time '0 1.3rem' works same
+}
